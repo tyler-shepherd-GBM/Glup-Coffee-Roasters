@@ -1,0 +1,288 @@
+/* ===================
+     Global Styles
+  ==================== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Leto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* ===================
+     Header Styles
+  ==================== */
+.nav-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #082B59;
+    color: #D98555;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+    padding: 15px;
+    min-width: 100px;
+    max-width: 200px;
+    text-align: center;
+}
+
+/* ===================
+     Footer Styles
+  ==================== */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    width: 100%;
+}
+
+.footer-inline-block {
+    display: inline-block;
+    padding: 15px;
+    min-width: 100px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.copyright {
+    display: block;
+}
+
+/* ===================
+     Button Styles
+  ==================== */
+.contact-button {
+    background-color: #082B59;
+    color: #F2F2F2;
+    padding: 20px 70px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin: 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button-container {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+/* ===================
+     Image Styles
+  ==================== */
+.brand-img img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto; 
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+
+/* ===================
+     Section Classes
+  ==================== */
+.section-1,
+.section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: #131D26;
+    padding: 20px;
+    width: 100%;
+}
+
+/* ===================
+     Typography Styles
+  ==================== */
+a {
+    color: #D98555;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #59331D;
+}
+
+a:active {
+    color: #59331D;
+}
+
+.footer-container a {
+    color: #D98555;
+}
+
+.footer-container a:hover {
+    color: #59331D;
+}
+
+/* ===================
+    Products Page Styles
+=================== */
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #131D26;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.product-card {
+    display: flex;
+    align-items: center;
+    background-color: #082B59;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+.product-card img {
+    width: 180px; 
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-description h2{
+    display: flex;
+    flex-direction: column; 
+    color: white;
+    flex: 1;
+    text-align: left;
+}
+
+.product-description p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.order-button {
+    background-color: #D98555;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: flex-end; 
+    margin-top: auto; 
+}
+
+.order-button:hover {
+    background-color: #A55B35;
+}
+
+/* ===================
+    Responsive Design
+=================== */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .product-card img {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .product-description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .order-button {
+        align-self: center;
+    }
+}
+
+/* ===================
+     Media Queries 
+  ==================== */
+@media (max-width: 768px) {
+    .section-1, .section-2 {
+        grid-template-columns: 1fr; 
+    }
+
+    .nav-bar {
+        flex-direction: column; 
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px; 
+    }
+
+    p {
+        font-size: 18px; 
+    }
+
+    .contact-button {
+        padding: 12px 30px; 
+        font-size: 16px;
+    }
+}
